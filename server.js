@@ -34,7 +34,7 @@ app.post('/sendData', (req, res) => {
 			}
 		});
 
-		return res.send({
+		return res.status(200).json({
 			"is_success" : true,
 			"user_id" : "sharma", "email" : "abc@gmail.com",
 			"roll_number" : "2110990619",
